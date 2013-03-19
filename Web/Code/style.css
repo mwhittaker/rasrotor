@@ -1,3 +1,4 @@
+/*
 body {
     margin:none;
     border:none;
@@ -17,25 +18,26 @@ p {
 a {
     text-decoration:none;
 }
+*/
 
 /* NAVBAR */
-#navbar {
+#nav {
     width:100%;
     margin:0;
     padding:0;
     background-color:#d6264f;
 }
-#navbar ul {
+#nav ul {
     list-style-type:none;
     margin:0;
     padding:0;
     overflow:hidden;
     text-align:center;
 }
-#navbar li {
+#nav li {
     float:left;
 }
-#navbar a:link, a:visited {
+#nav a:link, a:visited {
     display:block;
     width:200px;
     font-size:2em;
@@ -47,11 +49,12 @@ a {
     text-decoration:none;
     text-transform:uppercase;
 }
-#navbar a:hover, a:active {
+#nav a:hover, a:active {
     background-color:#a31d3c;
 }
 
-/* Table of Contents */
+
+/*
 #toc {
     width:100px;
     height:1500px;
@@ -72,8 +75,8 @@ a {
     width:650px;
     height:1000px;
     margin-left:10px;
-/*    background-image:url('../Media/Vertical Red Gradient.png');
-    background-repeat:repeat-x; */
+    background-image:url('../Media/Vertical Red Gradient.png');
+    background-repeat:repeat-x; 
 }
 
 #footer {
@@ -86,3 +89,4 @@ a {
     font-family:courier;
     font-size:16px;
 }
+*/
