@@ -1,5 +1,15 @@
+body {
+    font-size:100%;
+}    
 h1 {
     color:#d6264f;
+    text-transform:uppercase;
+}
+
+p {
+    text-indent:2em;
+    font-size:1.25em;
+    font:arial;
 }
 
 a {
@@ -7,13 +17,13 @@ a {
 }
 
 #page {
-    width:750px;
+    width:75em;
 }
 
 #navbar {
     background-color:#d6264f;
     text-color:white;
-    font-size:36px;
+    font-size:2em;
 }
 #navbar a:link {color:white;}
 #navbar a:visited {color:white;}
@@ -39,7 +49,10 @@ a {
 #main {
     float:left;
     width:650px;
-    height:1500px;
+    height:1000px;
+    margin-left:10px;
+/*    background-image:url('../Media/Vertical Red Gradient.png');
+    background-repeat:repeat-x; */
 }
 
 #footer {
