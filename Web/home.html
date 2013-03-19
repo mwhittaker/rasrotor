@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Rasrotor </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="The Rasrotor website and Michael/Udit's personal blog">
+    <meta name="keywords" content="Rasrotor,raspberry,pi">
+    <meta name="author" content="Michael Whittaker">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <a href="home.html"> <img src="/home/michael/Pictures/Rasrotor/Rasrotor_Logo.jpg" alt="Rasrotor Logo" width="100" height="100" title="www.rasrotor.com"> </a>
+    <a href="aboutus.html"> About US </a>
+    <a href="media.html"> Media </a>
+    <a href="contact.html"> Contact </a>
+
+    <!-- Table of Contents -->
+    <h1 style="text-align:center;color:green;font-family:courier;font-size:30px;"> Table of Contents </h1>
+    <p style="text-align:center;">
+        <a href="#welcome"> Welcome </a> <br>
+        <a href="#Euclid"> Euclid's Algorithm </a> <br>
+        <a href="#footer"> Footer </a>
+    </p>
+
+    <h1 title="You know you like it"> <a id="welcome"> Rasrotor</a> </h1>
+    <p> Part Raspbery Pi. Part Quadrotor. 100% totally cool. <br>
+        Co-created by Udit Gupta and Michael Whittaker <br>
+        For more information consult <a href="http://www.raspberrypi.org" target="_blank">the pi site</a> 
+    </p>
+
+    <h1> <a id="Euclid"> Euclid's Algorithm </a> </h1>
+    <p> Euclid's Algorithm, abbreviated <abbr title="Euclid's Algorithm"> EucAlg </abbr>,
+     is an algorithm for calculating the gcd of two positive integers. It does 
+     so recursively with an algorithmic complexity of O(log n). Or, as
+     Wikipedia describes, </p>
+        <blockquote cite="http://en.wikipedia.org/wiki/Euclidean_algorithm">
+        In mathematics, the <b>Euclidean Algorithm</b>, or <b>Euclid's algorithm</b>,
+        is an efficient method for computing the greatest common divisor 
+        <abbr title="greates common divisor"> (GCD) </abbr> of two integers, 
+        also known as the greatest common factor (GCF) or highes common factor 
+        (HCF). Also, you can use <i>italics</i>
+        </blockquote>
+    <p> Euclid's algorithm proves fruitful in the implementation of RSA
+    cryptography. Here is some psuedo code for it's implementation in python. </p>
+    <pre> <code>
+    def EucAlg(a, b):
+        if (b == 0):
+            return a
+        else:
+            return EucAlg(b, a%b) 
+    </code> </pre>
+    <p> Clearly, it is potent algorithm that can be implemented rather briefly. </p>
+
+    <h1> Extra Space </h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h1> <a id="footer"> Footer </a> </h1>
+    <p> Our project is really a nifty idea </p>
+<body>
+</html>
