@@ -1,4 +1,6 @@
 body {
+    margin:none;
+    border:none;
     font-size:100%;
 }    
 h1 {
@@ -16,21 +18,40 @@ a {
     text-decoration:none;
 }
 
-#page {
-    width:75em;
-}
-
+/* NAVBAR */
 #navbar {
+    width:100%;
+    margin:0;
+    padding:0;
     background-color:#d6264f;
-    text-color:white;
-    font-size:2em;
 }
-#navbar a:link {color:white;}
-#navbar a:visited {color:white;}
-#navbar a:hover {color:black;}
-#navbar a:focus {color:black;}
-#navbar a:active {color:black;}
+#navbar ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    text-align:center;
+}
+#navbar li {
+    float:left;
+}
+#navbar a:link, a:visited {
+    display:block;
+    width:200px;
+    font-size:2em;
+    font-weight:bold;
+    color:white;
+    background-color:#d6264f;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+#navbar a:hover, a:active {
+    background-color:#a31d3c;
+}
 
+/* Table of Contents */
 #toc {
     width:100px;
     height:1500px;
