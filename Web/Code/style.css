@@ -46,6 +46,78 @@
 }
 
 /* *****************************************************************************
+ * Home
+ * ****************************************************************************/
+#blog {
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:"Courier New";
+}
+#lights {
+    width:50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* *****************************************************************************
+ * Blog 
+ * ****************************************************************************/
+#blog article {
+    margin-top:25px;
+    margin-bottom:25px;
+
+    padding-top:10px;
+    padding-right:25px;
+    padding-bottom:25px;
+    padding-left:25px;
+    border:solid 3px black;
+}
+h2.blog-title{
+    position:relative;
+    width:1000px;
+    line-height:50px;
+    left:-78px;
+    margin-bottom:0;
+    text-align:center;
+
+    background-color:#60b22e;
+    color:white;
+    text-shadow:black 0.1em 0.1em 0.2em;
+}
+#triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 25px solid #458021;
+    border-left: 50px solid transparent;
+
+    position:relative;
+    float:left;
+    left:-78px;
+}
+#triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 25px solid #458021;
+    border-right: 50px solid transparent;
+    
+    position:relative;
+    float:left;
+    left:822px;
+}
+p.blog-date {
+    clear:both;
+    text-align:right;
+}
+p.blog-post {
+    text-indent:2em;
+}
+p.blog-author {
+    text-align:right;
+}
+
+
+/* *****************************************************************************
  * About Section 
  * ****************************************************************************/
 #about {
@@ -57,7 +129,7 @@
 #about p {
     text-indent:2em;
 }
-#about a:link, #about a:visited, #about:hover {
+#about a:link, #about a:visited, #about a:hover {
     color:black;
 }
 #about a:active {
@@ -76,6 +148,15 @@
 }
 #images p {
     text-indent:2em;
+}
+#images a:link, #images a:visited, #images a:hover {
+    text-decoration:none;
+    color:blue;
+}
+#images a:active {
+    text-decoration:none;
+    background-color:white;
+    color:purple;
 }
 
 /* *****************************************************************************
@@ -102,8 +183,9 @@
 #michael h1, #udit h1 {
     text-align:center;
 }
-#michael a, #udit a {
-    /* TODO: center the email addresses */
+#email {
+    clear:both;
+    text-align:center;
 }
 #michael a:link, #michael a:visited, #michael a:hover,
 #udit a:link, #udit a:visited, #udit a:hover {
@@ -115,4 +197,7 @@
 }
 #michael ul, #udit ul {
     list-style-type:none;
+}
+#udit ul {
+    padding:0;
 }
