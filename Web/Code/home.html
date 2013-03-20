@@ -3,95 +3,136 @@
 <head>
     <title> Rasrotor </title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="description" content="The Rasrotor website and Michael/Udit's personal blog">
+    <script src="script.js"></script>
+    <meta name="description" content="The Rasrotor Website as well as Michael and Udit's personal blog.">
     <meta name="keywords" content="Rasrotor,raspberry,pi">
     <meta name="author" content="Michael Whittaker">
 </head>
 
-<body>
-    <!-- Navbar -->
-    <div id="navbar">
+<body id="body">
+    <!---------- Banner ---------->
+    <div id="banner">
+    <a href="home.html"><img src="../Media/Rasrotor_Banner.png" id="bannerPic" title="Half Raspberry Pi. Half Quadrotor. And 100% Pretty Cool."></a>
+    </div>
+
+    <!---------- Navbar ---------->
+    <div id="nav">
     <ul>
     <li> <a href="home.html"> Home </a> </li>
-    <li> <a href="aboutus.html"> About </a> </li>
+    <li> <a href="about.html"> About </a> </li>
     <li> <a href="media.html"> Media </a> </li>
     <li> <a href="contact.html"> Contact </a> </li>
     </ul>
     </div>
 
-    <!--
-    COMMENTS
-    <a href="home.html"> <img src="../Media/Rasrotor Logo.png" alt="Rasrotor Logo" width="100" height="100" title="www.rasrotor.com" align="middle"> </a>
-    <a href="aboutus.html"> About US &nbsp </a>
-    <a href="media.html"> Media &nbsp</a>
-    <a href="contact.html"> Contact &nbsp</a>
-    </div>
+    <!---------- BLOG ---------->
+    <div id="blog">
 
-    <div id="toc">
-    <h1 style="text-align:center;"> Table<br>of<br>Contents </h1>
-    <p style="text-align:center; text-indent:0px;">
-        <a href="#welcome"> Welcome </a> <br>
-        <a href="#Euclid"> Euclid's Algorithm </a> <br>
-        <a href="#Tables"> Tables </a> <br>
-        <a href="#footer"> Footer </a>
-    </p>
-    </div>
-
-    <div id="main">
-    <h1 title="You know you like it"> <a id="welcome"> Rasrotor</a> </h1>
-    <p> Part Raspbery Pi. Part Quadrotor. 100% totally cool. <br>
-        Co-created by Udit Gupta and Michael Whittaker <br>
-        For more information consult <a href="http://www.raspberrypi.org" target="_blank">the pi site</a> 
-    </p>
-
-    <h1> <a id="Euclid"> Euclid's Algorithm </a> </h1>
-    <p> Euclid's Algorithm, abbreviated <abbr title="Euclid's Algorithm"> EucAlg </abbr>,
-     is an algorithm for calculating the gcd of two positive integers. It does 
-     so recursively with an algorithmic complexity of O(log n). Or, as
-     Wikipedia describes, </p>
-        <blockquote cite="http://en.wikipedia.org/wiki/Euclidean_algorithm">
-        In mathematics, the <b>Euclidean Algorithm</b>, or <b>Euclid's algorithm</b>,
-        is an efficient method for computing the greatest common divisor 
-        <abbr title="greates common divisor"> (GCD) </abbr> of two integers, 
-        also known as the greatest common factor (GCF) or highes common factor 
-        (HCF). Also, you can use <i>italics</i>
-        </blockquote>
-    <p> Euclid's algorithm proves fruitful in the implementation of RSA
-    cryptography. Here is some psuedo code for it's implementation in python. </p>
-    <pre> <code>
-    def EucAlg(a, b):
-        if (b == 0):
-            return a
-        else:
-            return EucAlg(b, a%b) 
-    </code> </pre>
-    <p> Clearly, it is potent algorithm that can be implemented rather briefly. </p>
-
-    <h1> <a id="Tables"> Tables </a> </h1>
-    <table border="1" cellpadding="10" cellspacing="3">
-    <caption> English to Spanish </caption>
-    <tr> <th> English </th> <th> Spanish </th> </tr>
-    <tr> 
-        <td> one </td> 
-        <td> uno </td>
-    </tr> <tr>
-        <td rowspan="2"> two </td>
-        <td> dos </td>
-    </tr> <tr>
-        <td> dos, otra ves </td>
-    </tr>
-    </table>
-
-    <h1> Extra Space </h1>
-    <br><br><br><br><br>
-
-    <h1> Bottom </h1>
-    <p> Our project is really a nifty idea </p>
-    </div>
-
-    <div id="footer">
-    Rasrotor
-    </div>
+    <!-- BLOG TEMPLATE
+    <article>
+    <h2 class="blog-title">TITLE</h2>
+    <div id="triangle-topright"></div>
+    <div id="triangle-topleft"></div>
+    <p class="blog-date">DATE</p>
+    <p class="blog-post">TEXT</p>
+    <p class="blog-post">TEXT</p>
+    <p class="blog-post">TEXT</p>
+    <p class="blog-post">TEXT</p>
+    <p class="blog-author">AUTHOR</p>
+    </article>
     -->
+
+    <!-- Transferring Hypertext -->
+    <article>
+    <h2 class="blog-title">Transferring Hypertext</h2>
+    <div id="triangle-topright"></div>
+    <div id="triangle-topleft"></div>
+    <p class="blog-date">2013-03-20</p>
+    <p class="blog-post">We made the website!</p>
+    <p class="blog-post">TEXT</p>
+    <p class="blog-post">TEXT</p>
+    <p class="blog-post">TEXT</p>
+    <p class="blog-author">Michael</p>
+    </article>
+
+
+    <!-- Don't Stop (Git it Git it) -->
+    <article>
+    <h2 class="blog-title">Don't Stop (Git it Git it)</h2>
+    <div id="triangle-topright"></div>
+    <div id="triangle-topleft"></div>
+    <p class="blog-date">2013-03-18</p>
+    <p class="blog-post">Today we played around with Git. After cloning, pushing, pulling and merging we were able to setup a rasrotor repository. All the code, including the html for the website was put here. </p>
+    <p class="blog-author">Udit</p>
+    </article>
+
+
+    <!-- Marking Up -->
+    <article>
+    <h2 class="blog-title">Marking Up</h2>
+    <div id="triangle-topright"></div>
+    <div id="triangle-topleft"></div>
+    <p class="blog-date">2013-03-17</p>
+    <p class="blog-post">After discovering one of the power adapters was broken, Udit and I got around to testing all the goodies in our care package. Apart from some issues trying to change the default language on our pi's from en_GB to en_US, things went swimmingly. This included booting up our second Raspberry Pi, deliciously named Buko (a Filipino coconut custard pie), and the third Raspberry Pi which will soon make it's way to California into the awaiting arms of my dad.
+    </p>
+    <p class="blog-post">We also began learning html and created the skeleton of our soon to be website. Topics included headings, paragraphs, links, images, video, style, formatting, the list goes on. Hopefully by the end of Spring Break, we will have created something that passes for a website and let it loose to the web at large.</p>
+    <p class="blog-author">Michael</p>
+    </article>
+
+
+    <!-- Let There Be Mud -->
+    <article>
+    <h2 class="blog-title">Let There Be Mud</h2>
+    <div id="triangle-topright"></div>
+    <div id="triangle-topleft"></div>
+    <p class="blog-date">2013-03-16</p>
+    <p class="blog-post">Today we connected the RasPi to a TV and ssh-ed into the default pi user. We were also ran ssh-keygens to ease the ssh process. After playing around with the usernames - differences between adduser and useradd, we finally added the user *mud. The second raspi is to be named....</p>
+    <p class="blog-post">We connected mud to a router which was also connected via ethernet to a computer. This allowed us to ssh into the pi w/o internet access. From now on we will try to always use ssh to work with mud.</p>
+    <p class="blog-post">Finally, we added mud to the sudo group allowing it to sudo. We also implemented Euclid's algorithm in C on mud.</p>
+    <p class="blog-post">*Mud : A combination of Michael and Udit. Also mud pie.</p>
+    <p class="blog-author">Udit</p>
+    </article>
+
+    <!-- Hello, New Jersey! -->
+    <article>
+    <h2 class="blog-title">Hello, New Jersey!</h2>
+    <div id="triangle-topright"> </div>
+    <div id="triangle-topleft"> </div>
+    <p class="blog-date">2013-03-15</p>
+    <p class="blog-post">We started the Pi's!!</p>
+    <p class="blog-post">The first time we powered up the Raspberry Pi nothing worked.  We quickly learned that the power adapter was broken - thank god the Pi itself was okay. After configuring the Pi we spent a few hours playing games, admiring the GUI, and writing "Hello World" in C, C++, and Python.</p>
+    <p class="blog-post">Stay tuned for more exciting news...</p>
+    <p class="blog-author">Udit</p>
+    </article>
+
+    <!-- Pi Day Came Early This Year -->
+    <article>
+    <h2 class="blog-title">Pi Day Came Early This Year</h2>
+    <div id="triangle-topright"> </div>
+    <div id="triangle-topleft"> </div>
+    <p class="blog-date">2013-03-11</p>
+    <p class="blog-post">Like Christmas in March, our Raspberry Pi care package arrived in the mail today. We unboxed the Pi's to make sure the tech treats survived their cross country trek. Academic masochists though, both Udit and I are rather bogged down in class work and won't have time to take a byte of the Pi's until the start of Spring Break this Friday.
+    <p class="blog-author">Michael</p>
+    </article>
+
+     <!-- Hello, World! -->    
+    <article>
+    <h2 class="blog-title">Hello, World!</h2>
+    <div id="triangle-topright"> </div>
+    <div id="triangle-topleft"> </div>
+    <p class="blog-date">2013-03-03</p>
+    <p class="blog-post">Hello and welcome to the first blog post of the Rasrotor project! For a brief description of the project, head on over to the "About" section.</p>
+    <p class="blog-post">My name is Michael Whittaker. I'm a computer scientist and member of the Class of 2016 at Cornell University. Most of my time, outside of classwork, is spent on CUAir, the project team I belong to, and on consulting an introductory computer science course at Cornell, CS 1110. One day, my wonderful parents gave me a call and asked if I was interested in getting a Raspberry Pi. A fan of computers, linux, and pie, I happily accepted.</p>    
+    <p class="blog-post">My friend's name is Udit Gupta. He's an Electrical and Computer Engineering major, also in the Class of 2016 at Cornell. He's also part of CUAir. He was planning on purchasing a quadrotor to fly recreationally.</p> 
+    <p class="blog-post">Being friends, the two of us got talking and quickly realized that a Raspberry Pi and quadrotor combination would be a beautiful thing.</p>  
+    <p class="blog-post">We're not really sure what this project will entail, but we imagine a Raspberry Pi attached to the underside of a quadrotor, flying around and generally being awesome. We'll start a website to document the project. We'll make our code open source to be as transparent as possible. We'll learn a lot along the way.</p>    
+    <p class="blog-post">From mastering git to becoming familiar with the linux command line to researching computer networking, the Rasrotor project is, above all else, a learning experience. An autonomous, barrel-rolling, Raspberry Pi powered supercopter would be a wonderful takeaway, but even if our quadrotor and pi's both crash miserably, we'll still mark it as a win if we learn something new.</p>    
+    <p class="blog-author">Michael</p>
+    </article>
+  
+    </div>
+
+    <!---------- Lights ---------->
+    <div id="lights"><img style="width:50px; height:auto;" src="../Media/Rasrotor_Logo.png" onclick="hitTheLights(this)" title="A Bright Idea"></div>
 <body>
 </html>
