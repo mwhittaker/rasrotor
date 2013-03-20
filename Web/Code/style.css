@@ -1,92 +1,118 @@
-/*
-body {
-    margin:none;
-    border:none;
-    font-size:100%;
-}    
-h1 {
-    color:#d6264f;
-    text-transform:uppercase;
+/* *****************************************************************************
+ * Banner
+ * ****************************************************************************/
+#banner {
+    margin-bottom:4px;
+}
+#banner img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-p {
-    text-indent:2em;
-    font-size:1.25em;
-    font:arial;
-}
-
-a {
-    text-decoration:none;
-}
-*/
-
-/* NAVBAR */
+/* *****************************************************************************
+ * Navigation Bar
+ * ****************************************************************************/
 #nav {
-    width:100%;
-    margin:0;
-    padding:0;
     background-color:#d6264f;
 }
 #nav ul {
     list-style-type:none;
+    min-width:900px;
     margin:0;
     padding:0;
-    overflow:hidden;
     text-align:center;
+    overflow:hidden;
 }
 #nav li {
-    float:left;
+    display:inline;    
 }
 #nav a:link, a:visited {
-    display:block;
+    display:inline-block;
     width:200px;
+    padding:4px;
+
     font-size:2em;
     font-weight:bold;
-    color:white;
-    background-color:#d6264f;
     text-align:center;
-    padding:4px;
     text-decoration:none;
     text-transform:uppercase;
+    
+    background-color:#d6264f;
+    color:white;
 }
 #nav a:hover, a:active {
     background-color:#a31d3c;
 }
 
-
-/*
-#toc {
-    width:100px;
-    height:1500px;
-    background-color:green;
-    text-color:white;
-    text-align:center;
-    float:left;
-}
-#toc a:link {color:white;}
-#toc a:visited {color:white;}
-#toc a:hover {color:red;}
-#toc a:focus {color:red;}
-#toc a:active {color:red;}
-#toc h1 {color:white;font-family:courier;font-size:15px;}
-
-#main {
-    float:left;
-    width:650px;
-    height:1000px;
-    margin-left:10px;
-    background-image:url('../Media/Vertical Red Gradient.png');
-    background-repeat:repeat-x; 
-}
-
-#footer {
-    text-align:center;
-    clear:both;
-}
-
+/* *****************************************************************************
+ * About Section 
+ * ****************************************************************************/
 #about {
-    width:500px;
-    font-family:courier;
-    font-size:16px;
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:"Courier New";
 }
-*/
+#about p {
+    text-indent:2em;
+}
+#about a:link, #about a:visited, #about:hover {
+    color:black;
+}
+#about a:active {
+    color:gray;
+    background-color:white;
+}
+
+/* *****************************************************************************
+ * Images 
+ * ****************************************************************************/
+#images {
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:"Courier New";
+}
+#images p {
+    text-indent:2em;
+}
+
+/* *****************************************************************************
+ * Contact 
+ * ****************************************************************************/
+#michael, #udit {
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:"Courier New";
+}
+#michael img {
+    float:left;
+    height:200px;
+    width:auto;
+    margin-right:1em;
+}
+#udit img {
+    float:right;
+    height:200px;
+    width:auto;
+    margin-left:1em;
+}
+#michael h1, #udit h1 {
+    text-align:center;
+}
+#michael a, #udit a {
+    /* TODO: center the email addresses */
+}
+#michael a:link, #michael a:visited, #michael a:hover,
+#udit a:link, #udit a:visited, #udit a:hover {
+    color:blue;
+}
+#michael a:active, #udit a:active {
+    color:purple;
+    background-color:white;
+}
+#michael ul, #udit ul {
+    list-style-type:none;
+}
