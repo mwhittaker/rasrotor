@@ -131,6 +131,7 @@ p.blog-author {
 }
 #about a:link, #about a:visited, #about a:hover {
     color:black;
+    background-color:white;
 }
 #about a:active {
     color:gray;
@@ -138,7 +139,7 @@ p.blog-author {
 }
 
 /* *****************************************************************************
- * Images 
+ * Media 
  * ****************************************************************************/
 #images {
     width:900px;
@@ -146,17 +147,46 @@ p.blog-author {
     margin-right:auto;
     font-family:"Courier New";
 }
-#images p {
-    text-indent:2em;
+#images li {
+    margin:10px;
+}
+#images a {
+    font-size:1.25em;
+    padding:2px;
 }
 #images a:link, #images a:visited, #images a:hover {
     text-decoration:none;
     color:blue;
+    background-color:white;
+}
+#images a:hover {
+    background-color:#60b22e;
+    color:white;
+    box-shadow: 5px 5px 3px #294D14;
 }
 #images a:active {
     text-decoration:none;
     background-color:white;
     color:purple;
+}
+#preview {
+    background-color:#222222;
+    border: 5px solid #222222;
+    box-shadow: 0.5em 0.5em 1em black;
+
+    width:520px;
+    height:390px;
+    margin:0;
+    padding:0;
+
+    position:fixed;
+    top:243px;
+    left:750px;
+    overflow:hidden;
+}
+#preview img {
+     width:520px;
+     height:auto;
 }
 
 /* *****************************************************************************
@@ -167,6 +197,13 @@ p.blog-author {
     margin-left:auto;
     margin-right:auto;
     font-family:"Courier New";
+}
+hr {
+    height:14px;
+    background:url('../Media/Eighty_Character.png') no-repeat top center;
+    border:0;
+    margin-top:2em;
+    margin-bottom:2em;
 }
 #michael img {
     float:left;
@@ -190,6 +227,7 @@ p.blog-author {
 #michael a:link, #michael a:visited, #michael a:hover,
 #udit a:link, #udit a:visited, #udit a:hover {
     color:blue;
+    background-color:white;
 }
 #michael a:active, #udit a:active {
     color:purple;
