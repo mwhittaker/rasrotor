@@ -157,7 +157,7 @@ p.blog-author {
 #images a:link, #images a:visited, #images a:hover {
     text-decoration:none;
     color:blue;
-    background-color:white;
+    background-color:none;
 }
 #images a:hover {
     background-color:#60b22e;
@@ -166,29 +166,80 @@ p.blog-author {
 }
 #images a:active {
     text-decoration:none;
-    background-color:white;
+    background-color:none;
     color:purple;
 }
-#preview {
-    background-color:#222222;
-    border: 5px solid #222222;
-    box-shadow: 0.5em 0.5em 1em black;
+#pane {
+    background-image:url("../Media/Polaroid.jpg");
+    background-size:100%;
+    box-shadow:0.5em 0.5em 1em black;
 
-    width:520px;
-    height:390px;
+    margin:0;
+    border:1px solid gray;
+    padding:0px;
+
+    position:fixed;
+    z-index:-1;
+    width:450px;
+    height:493px;
+    left:850px;
+    top:250px;
+}
+#preview {
+    margin:0;
+    border:0;
+    padding:0;
+
+    position:relative;
+    left:31px;
+    top:30px;
+    width:390px;
+    height:355px;
+
+    overflow:hidden;
+}
+#previewText {
+    position:fixed;
+    left:800px; 
+    top:670px; 
+
+    width:552px;
+    line-height:50px;
+    margin:0;
+    padding:0;
+    text-align:center;
+
+    background-color:#60b22e;
+    color:white;
+    text-shadow:black 0.1em 0.1em 0.2em;
+}
+div.triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid #458021;
+    border-left: 50px solid transparent;
+
+    position:fixed;
+    left:800px;
+    top:645px;
+}
+div.triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid #458021;
+    border-right: 50px solid transparent;
+
+    position:fixed;
+    left:1302px;
+    top:645px;
+}
+#preview img {
     margin:0;
     padding:0;
 
-    position:fixed;
-    top:243px;
-    left:750px;
-    overflow:hidden;
+    width:390px;
+    height:355px;
 }
-#preview img {
-     width:520px;
-     height:auto;
-}
-
 /* *****************************************************************************
  * Contact 
  * ****************************************************************************/
