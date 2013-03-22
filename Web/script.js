@@ -17,7 +17,7 @@ function hitTheLights(obj) {
 
     // lights on
     if (banner.src.match("White")) {
-        banner.src="../Media/Rasrotor_Banner.png";
+        banner.src="Media/Rasrotor_Banner.png";
         body.style.backgroundColor="white";
         for (var i = 0; i < articles.length; i++) {
             articles[i].style.borderColor = "black";
@@ -33,7 +33,7 @@ function hitTheLights(obj) {
     }
     // lights off
     else {
-        banner.src="../Media/Rasrotor_Banner_White.png";
+        banner.src="Media/Rasrotor_Banner_White.png";
         body.style.backgroundColor="black";
         for (var i = 0; i < articles.length; i++) {
             articles[i].style.borderColor = "white";
