@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * File          : script.js
+ * Author        : Michael Whittaker
+ * Email         : mjw297@cornell.edu
+ * Last Modified : 2013-03-19 
+ ******************************************************************************/
+
+/*******************************************************************************
+ * Inverts the color scheme from white to black and vice-versa.
+ ******************************************************************************/
 function hitTheLights(obj) {
     var banner = document.getElementById("bannerPic");
     var body = document.getElementById("body");
