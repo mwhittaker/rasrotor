@@ -115,6 +115,15 @@ p.blog-post {
 p.blog-author {
     text-align:right;
 }
+a.blog-link:link, a.blog-link:visited, a.blog-link:hover {
+    color:blue;
+    text-decoration:none;
+    background-color:white;
+}
+a.blog-link:active {
+    color:purple;
+    background-color:white;
+}
 ul.blog-media {
     text-align:right;
     list-style-type:none;
@@ -196,10 +205,6 @@ ul.blog-media a:active {
     
     right:150px;
     top:225px;
-    /*
-    left:850px;
-    top:250px;
-    */
 }
 #preview {
     margin:0;
