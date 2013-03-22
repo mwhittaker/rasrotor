@@ -197,6 +197,10 @@ p.blog-author {
     height:355px;
 
     overflow:hidden;
+    background-image:url("");
+    background-position:center center;
+    background-size: 100%;
+    background-repeat:no-repeat;
 }
 #previewText {
     position:fixed;
@@ -232,13 +236,6 @@ div.triangle-bottomleft {
     position:fixed;
     left:1302px;
     top:645px;
-}
-#preview img {
-    margin:0;
-    padding:0;
-
-    width:390px;
-    height:355px;
 }
 /* *****************************************************************************
  * Contact 
