@@ -115,8 +115,19 @@ p.blog-post {
 p.blog-author {
     text-align:right;
 }
-
-
+ul.blog-media {
+    text-align:right;
+    list-style-type:none;
+}
+ul.blog-media a:link, ul.blog-media a:visited, ul.blog-media a:hover {
+    color:blue;
+    text-decoration:none;
+    background-color:none;
+}
+ul.blog-media a:active {
+    color:purple;
+    background-color:white;
+}
 /* *****************************************************************************
  * About Section 
  * ****************************************************************************/
@@ -131,11 +142,11 @@ p.blog-author {
 }
 #about a:link, #about a:visited, #about a:hover {
     color:black;
-    background-color:white;
+    background-color:none;
 }
 #about a:active {
     color:gray;
-    background-color:white;
+    background-color:none;
 }
 
 /* *****************************************************************************
@@ -275,11 +286,11 @@ hr {
 #michael a:link, #michael a:visited, #michael a:hover,
 #udit a:link, #udit a:visited, #udit a:hover {
     color:blue;
-    background-color:white;
+    background-color:none;
 }
 #michael a:active, #udit a:active {
     color:purple;
-    background-color:white;
+    background-color:none;
 }
 #michael ul, #udit ul {
     list-style-type:none;
