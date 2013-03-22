@@ -122,7 +122,7 @@ ul.blog-media {
 ul.blog-media a:link, ul.blog-media a:visited, ul.blog-media a:hover {
     color:blue;
     text-decoration:none;
-    background-color:none;
+    background-color:white;
 }
 ul.blog-media a:active {
     color:purple;
@@ -142,11 +142,11 @@ ul.blog-media a:active {
 }
 #about a:link, #about a:visited, #about a:hover {
     color:black;
-    background-color:none;
+    background-color:white;
 }
 #about a:active {
     color:gray;
-    background-color:none;
+    background-color:white;
 }
 
 /* *****************************************************************************
@@ -162,13 +162,13 @@ ul.blog-media a:active {
     margin:10px;
 }
 #images a {
-    font-size:1.25em;
+    font-size:1em;
     padding:2px;
 }
 #images a:link, #images a:visited, #images a:hover {
     text-decoration:none;
     color:blue;
-    background-color:none;
+    background-color:white;
 }
 #images a:hover {
     background-color:#60b22e;
@@ -177,7 +177,7 @@ ul.blog-media a:active {
 }
 #images a:active {
     text-decoration:none;
-    background-color:none;
+    background-color:#60b22e;
     color:purple;
 }
 #pane {
@@ -291,11 +291,11 @@ hr {
 #michael a:link, #michael a:visited, #michael a:hover,
 #udit a:link, #udit a:visited, #udit a:hover {
     color:blue;
-    background-color:none;
+    background-color:white;
 }
 #michael a:active, #udit a:active {
     color:purple;
-    background-color:none;
+    background-color:white;
 }
 #michael ul, #udit ul {
     list-style-type:none;
