@@ -2,7 +2,7 @@
  * File          : script.js
  * Author        : Michael Whittaker
  * Email         : mjw297@cornell.edu
- * Last Modified : 2013-03-19 
+ * Last Modified : 2013-03-21 
  ******************************************************************************/
 
 /*******************************************************************************
@@ -13,27 +13,35 @@ function hitTheLights(obj) {
     var body = document.getElementById("body");
     var articles = document.getElementsByTagName("article");
     var paras = document.getElementsByTagName("p");
+    var links = document.getElementsByTagName("a");
 
     // lights on
     if (banner.src.match("White")) {
         banner.src="../Media/Rasrotor_Banner.png";
         body.style.backgroundColor="white";
         for (var i = 0; i < articles.length; i++) {
-            articles[i].style.borderColor="black";
+            articles[i].style.borderColor = "black";
         }
         for (var i = 0; i < paras.length; i++) {
-            paras[i].style.color="black";
+            paras[i].style.color = "black";
         }
+        for (var i = 0; i < links.length; i++) {
+            links[i].style.background = "white";
+        }
+
     }
     // lights off
     else {
         banner.src="../Media/Rasrotor_Banner_White.png";
         body.style.backgroundColor="black";
         for (var i = 0; i < articles.length; i++) {
-            articles[i].style.borderColor="white";
+            articles[i].style.borderColor = "white";
         }
         for (var i = 0; i < paras.length; i++) {
-            paras[i].style.color="white";
+            paras[i].style.color = "white";
+        }
+        for (var i = 0; i < links.length; i++) {
+            links[i].style.background = "black";
         }
     }
 }
