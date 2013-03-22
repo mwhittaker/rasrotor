@@ -193,8 +193,13 @@ ul.blog-media a:active {
     z-index:-1;
     width:450px;
     height:493px;
+    
+    right:150px;
+    top:225px;
+    /*
     left:850px;
     top:250px;
+    */
 }
 #preview {
     margin:0;
@@ -215,8 +220,8 @@ ul.blog-media a:active {
 }
 #previewText {
     position:fixed;
-    left:800px; 
-    top:670px; 
+    right:100px;
+    top:645px; 
 
     width:552px;
     line-height:50px;
@@ -235,8 +240,8 @@ div.triangle-bottomright {
     border-left: 50px solid transparent;
 
     position:fixed;
-    left:800px;
-    top:645px;
+    right:602px;
+    top:621px;
 }
 div.triangle-bottomleft {
     width: 0;
@@ -245,8 +250,8 @@ div.triangle-bottomleft {
     border-right: 50px solid transparent;
 
     position:fixed;
-    left:1302px;
-    top:645px;
+    right:100px;
+    top:621px;
 }
 /* *****************************************************************************
  * Contact 
