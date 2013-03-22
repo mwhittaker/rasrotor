@@ -26,9 +26,10 @@ function hitTheLights(obj) {
             paras[i].style.color = "black";
         }
         for (var i = 0; i < links.length; i++) {
-            links[i].style.background = "white";
+            if (links[i].className != "nav-option") {
+                links[i].style.background = "white";
+            }
         }
-
     }
     // lights off
     else {
@@ -41,7 +42,9 @@ function hitTheLights(obj) {
             paras[i].style.color = "white";
         }
         for (var i = 0; i < links.length; i++) {
-            links[i].style.background = "black";
+            if (links[i].className != "nav-option") {
+                links[i].style.background = "black";
+            }
         }
     }
 }
