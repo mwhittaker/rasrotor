@@ -1,7 +1,7 @@
-all: hello.exe mimic.exe
+all: hello.out mimic.out
 
-hello.exe: hello.c
-	gcc -g3 -Wall -o hello.exe hello.c 
+hello.out: hello.c
+	gcc -g3 -Wall -o hello.out hello.c 
 
-mimic.exe: mimic.c
-	gcc -g3 -Wall -o mimic.exe mimic.c 
+mimic.out: mimic.c
+	gcc -g3 -Wall -o mimic.out mimic.c 
