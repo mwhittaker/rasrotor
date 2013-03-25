@@ -1,1 +1,1 @@
-This branch is for implementing any programs that help us learn and master C.
+This branch is for implementing any programs that help us learn and master C. Feel free to try things out!
