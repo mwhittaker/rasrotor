@@ -5,10 +5,10 @@
 #include <stdio.h>
 
  int main() {
-     int c;
+     int hc;
 
-     while ((c = getchar()) != EOF) {
-         putchar(c);
+     while ((hc = getchar()) != EOF) {
+         putchar(hc);
      }
 
      return 0;
