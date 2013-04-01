@@ -7,8 +7,8 @@
  * A point. 
  * ***************************************************************************/
 typedef struct Point {
-    int x;
-    int y;
+    float x;
+    float y;
 } Point;
 
 /* *****************************************************************************
@@ -18,7 +18,7 @@ typedef struct Point {
  * @param y: y coordinate.
  * @return A point.
  * ***************************************************************************/
-Point makePoint(int x, int y);
+Point makePoint(float x, float y);
 
 /* *****************************************************************************
  * Returns the sum of two points.
@@ -28,5 +28,10 @@ Point makePoint(int x, int y);
  * @return The sum of two points.
  * ***************************************************************************/
 Point addPoints(Point a, Point b);
+
+/* *****************************************************************************
+ * Returns a point in the same direction at a length 1 from the origin.
+ * ****************************************************************************/
+ Point unitPoint(Point p);
 
 #endif
